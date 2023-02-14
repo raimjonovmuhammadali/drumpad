@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>O'zbekcha drumpad</title>
+</head>
+<body>
+    <div class="container">
+        <div class="drumpad">
+            <div class="left">
+                <h1>MIDIDRUM</h1>
+                <div class="beats">
+                    <button class="beatt2" onclick="beat2()">Beat 2</button>
+                    <button class="melody2" onclick="melody2()">Melody 2</button>
+                    <button class="melody1" onclick="melody1()">Melody 1</button>
+
+                    <audio src="./assets/sounds/meloduz.mp3" loop controls class="melodysound" preload="auto"></audio>
+                    <audio src="./assets/sounds/melody2.wav" loop controls class="melodysound2" preload="auto"></audio>
+                    <audio src="./assets/sounds/beat2.mp3" loop controls class="beat2sound" preload="auto"></audio>
+
+                    <button class="uzb1" onclick="uzb1()">Uz Muz</button>
+                    <audio src="./assets/sounds/yoningdaman.mp3" controls class="uzbmelod" preload="auto"></audio>
+
+                    <button class="flex" onclick="flexm()">Flex</button>
+                    <button class="hihat" onclick="hat()">Hi Hat</button>
+                    <button class="beat1" onclick="beat1Play()">Beat</button>
+
+                    <audio src="./assets/sounds/beat1.mp3" loop controls class="beat1sound" preload="auto"></audio>
+                    <audio src="./assets/sounds/hi hat.mp3" loop controls class="hitsound" preload="auto"></audio>
+                    <audio src="./assets/sounds/flexm.mp3" loop controls class="flexsound" preload="auto"></audio>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <a href="https://t.me/raimjonovblog" target="_blank">Help</a>
+                    <button class="reset" onclick="pauseAudio()">Reset</button>
+                </div>
+
+                <h1><a href="https://t.me/raimjonovblog">Raimjonov Muhammadali</a></h1>
+            </div>
+            <div class="right">
+                <div class="btns">
+                    <p>01 Sfx <code>E</code></p>
+                    <button class="e playbtn">E</button>
+                </div>
+                <div class="btns">
+                    <p>02 Shaker <code>Z</code></p>
+                    <button class="z playbtn">Z</button>
+                </div>                
+                <div class="btns">
+                    <p>03 Tamp <code>Q</code></p>
+                    <button class="q playbtn">Q</button>
+                </div>                
+                <div class="btns">
+                    <p>04 Beep <code>B</code></p>
+                    <button class="b playbtn">B</button>
+                </div>                
+                <div class="btns">
+                    <p>05 Snare <code>X</code></p>
+                    <button class="x playbtn">X</button>
+                </div>                
+                <div class="btns">
+                    <p>06 Slap <code>S</code></p>
+                    <button class="s playbtn">S</button>
+                </div>                
+                <div class="btns">
+                    <p>07 Tamp <code>W</code></p>
+                    <button class="w playbtn">W</button>
+                </div>                
+                <div class="btns">
+                    <p>08 Hit <code>H</code></p>
+                    <button class="h playbtn">H</button>
+                </div>                
+                <div class="btns">
+                    <p>09 Kick <code>K</code></p>
+                    <button class="k playbtn"></button>
+                </div>                
+                <div class="btns">
+                    <p>19 Crash <code>C</code></p>
+                    <button class="c playbtn">C</button>
+                </div>                
+                <div class="btns">
+                    <p>11 Clav <code>G</code></p>
+                    <button class="g playbtn">G</button>
+                </div>                
+                <div class="btns">
+                    <p>12 Tom <code>T</code></p>
+                    <button class="t playbtn">T</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/app.js"></script>
+</html>

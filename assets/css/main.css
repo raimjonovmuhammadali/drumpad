@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .drumpad {
+  width: 70%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+.container .drumpad .left {
+  width: 30%;
+  height: 100%;
+  background: rgb(20, 20, 20);
+  border-radius: 10px 0 0 10px;
+}
+.container .drumpad .left h1 {
+  text-align: center;
+  height: 100px;
+  margin-top: 15px;
+  color: white;
+}
+.container .drumpad .left h1 a {
+  color: white;
+  text-decoration: none;
+}
+.container .drumpad .left .beats {
+  width: 90%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.container .drumpad .left .beats audio {
+  position: absolute;
+  top: -100px;
+}
+.container .drumpad .left .beats button {
+  width: 31%;
+  height: 50px;
+  margin: 20px 0;
+  cursor: pointer;
+  border: 5px solid rgb(227, 227, 227);
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+.container .drumpad .left .beats a {
+  width: 31%;
+  height: 50px;
+  margin: 20px 0;
+  cursor: pointer;
+  border: 5px solid rgb(227, 227, 227);
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .drumpad .left .beats .reset:active {
+  border: 5px solid red;
+}
+.container .drumpad .left .beats button:active {
+  transform: translateY(10px);
+}
+.container .drumpad .left .beats .active {
+  border: 5px solid red;
+}
+.container .drumpad .right {
+  width: 70%;
+  height: 100%;
+  background: rgb(20, 20, 20);
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 10px 0 0;
+}
+.container .drumpad .right .btns {
+  width: 32%;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .drumpad .right .btns button {
+  width: 60%;
+  height: 110px;
+  border: 5px solid rgb(198, 198, 198);
+  background: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background: rgb(20, 20, 20);
+  color: rgb(20, 20, 20);
+  transition: all 0.1s ease-in-out;
+}
+.container .drumpad .right .btns .activeBtn {
+  border: 5px solid red;
+  box-shadow: 1px 1px 10px red;
+}
+.container .drumpad .right .btns p {
+  width: 60%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.container .drumpad .right .btns p code {
+  background: white;
+  padding: 3px 20px;
+  color: black;
+  border-radius: 2px;
+}
+
+@media screen and (max-width: 447px) {
+  .container .drumpad {
+    width: 100%;
+    height: 100vh;
+  }
+  .container .drumpad .left {
+    display: none;
+  }
+  .container .drumpad .right {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+  }
+  .container .drumpad .right .btns button {
+    width: 90%;
+    height: 100px;
+  }
+  .container .drumpad .right .btns p {
+    display: none;
+  }
+}
+@media screen and (min-width: 447px) and (max-width: 769px) {
+  .container .drumpad {
+    width: 100%;
+    height: 100vh;
+  }
+  .container .drumpad .left {
+    display: none;
+  }
+  .container .drumpad .right {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+  }
+  .container .drumpad .right .btns button {
+    width: 70%;
+    height: 140px;
+  }
+  .container .drumpad .right .btns p {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 990px) {
+  .container .drumpad {
+    width: 100%;
+    height: 100vh;
+  }
+  .container .drumpad .left {
+    display: none;
+  }
+  .container .drumpad .right {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+  }
+  .container .drumpad .right .btns button {
+    width: 70%;
+    height: 140px;
+  }
+  .container .drumpad .right .btns p {
+    display: none;
+  }
+}
+@media screen and (min-width: 990px) and (max-width: 1200px) {
+  .container .drumpad {
+    width: 100%;
+    height: 100vh;
+  }
+  .container .drumpad .left {
+    display: none;
+  }
+  .container .drumpad .right {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+  }
+  .container .drumpad .right .btns button {
+    width: 60%;
+    height: 160px;
+  }
+  .container .drumpad .right .btns p {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .drumpad {
+    width: 70%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+  }
+  .container .drumpad .left {
+    width: 30%;
+    height: 100%;
+    background: rgb(20, 20, 20);
+    border-radius: 10px 0 0 10px;
+    position: relative;
+  }
+  .container .drumpad .left h1 {
+    text-align: center;
+    height: 100px;
+    margin-top: 15px;
+    color: white;
+  }
+  .container .drumpad .left h1 a {
+    color: white;
+    text-decoration: none;
+  }
+  .container .drumpad .left .beats {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .container .drumpad .left .beats audio {
+    position: absolute;
+    top: -100px;
+  }
+  .container .drumpad .left .beats button {
+    width: 31%;
+    height: 50px;
+    margin: 20px 0;
+    cursor: pointer;
+    border: 5px solid rgb(227, 227, 227);
+    background: none;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+  }
+  .container .drumpad .left .beats a {
+    width: 31%;
+    height: 50px;
+    margin: 20px 0;
+    cursor: pointer;
+    border: 5px solid rgb(227, 227, 227);
+    background: none;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .drumpad .left .beats .reset:active {
+    border: 5px solid red;
+  }
+  .container .drumpad .left .beats button:active {
+    transform: translateY(10px);
+  }
+  .container .drumpad .left .beats .active {
+    border: 5px solid red;
+  }
+  .container .drumpad .left .settings {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.792);
+    top: 0;
+    position: absolute;
+  }
+  .container .drumpad .right {
+    width: 70%;
+    height: 100%;
+    background: rgb(20, 20, 20);
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 10px 0 0;
+  }
+  .container .drumpad .right .btns {
+    width: 32%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container .drumpad .right .btns button {
+    width: 60%;
+    height: 110px;
+    border: 5px solid rgb(198, 198, 198);
+    background: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background: rgb(20, 20, 20);
+    color: rgb(20, 20, 20);
+    transition: all 0.1s ease-in-out;
+  }
+  .container .drumpad .right .btns .activeBtn {
+    border: 5px solid red;
+    box-shadow: 1px 1px 10px red;
+  }
+  .container .drumpad .right .btns p {
+    width: 60%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .container .drumpad .right .btns p code {
+    background: white;
+    padding: 3px 20px;
+    color: black;
+    border-radius: 2px;
+  }
+}/*# sourceMappingURL=main.css.map */
